@@ -1,0 +1,5 @@
+services:
+  nginx:
+    image: nginx:1.21-alpine
+    ports:
+      - "8082:80"

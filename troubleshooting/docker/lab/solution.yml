@@ -1,0 +1,27 @@
+services:
+  rng-api:
+    image: courselabs/rng-api:21.05
+    entrypoint: ["dotnet", "/app/Numbers.Api.dll"]
+    env_file: ./config/logging.env
+    ports:
+      - "8089:80"
+    volumes:
+      - ./config/api:/app/config
+    networks:
+      - app-net
+
+  rng-web:
+    image: courselabs/rng-web:21.05
+    env_file: ./config/logging.env
+    environment:
+      - RngApi__Url=http://rng-api/rng
+    ports:
+      - "8090:80"
+    cpus: 2.5
+    networks:
+      - app-net
+      - front-end
+
+networks:
+  app-net:
+  front-end:

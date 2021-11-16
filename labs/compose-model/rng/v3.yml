@@ -1,0 +1,33 @@
+services:
+  rng-api:
+    image: courselabs/rng-api:21.05
+    volumes:
+      - ./config/dev/logging.json:/app/config/logging.json
+    secrets:
+      - source: rng-api
+        target: /app/config/override.json
+    ports:
+      - "8089:80"
+    networks:
+      - app-net
+
+  rng-web:
+    image: courselabs/rng-web:21.05
+    volumes:
+      - ./config/dev/logging.json:/app/config/logging.json
+    secrets:
+      - source: rng-web
+        target: /app/config/override.json
+    ports:
+      - "8090:80"
+    networks:
+      - app-net
+
+networks:
+  app-net:
+
+secrets:
+  rng-api:
+    file: ./config/dev/api/override.json
+  rng-web:
+    file: ./config/dev/web/override.json
