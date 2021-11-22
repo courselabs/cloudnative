@@ -3,7 +3,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: front-end
-  namespace: sock-shop
 spec:
   replicas: 1
   selector:
@@ -12,6 +11,7 @@ spec:
   template:
     metadata:
       labels:
+        app: sockshop
         name: front-end
     spec:
       containers:

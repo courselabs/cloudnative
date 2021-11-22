@@ -5,7 +5,6 @@ metadata:
   name: user
   labels:
     name: user
-  namespace: sock-shop
 spec:
   replicas: 1
   selector:
@@ -15,6 +14,7 @@ spec:
     metadata:
       labels:
         name: user
+        app: sockshop
     spec:
       containers:
       - name: user
@@ -50,7 +50,7 @@ spec:
           httpGet:
             path: /health
             port: 80
-          initialDelaySeconds: 180
+          initialDelaySeconds: 60
           periodSeconds: 3
       nodeSelector:
         beta.kubernetes.io/os: linux

@@ -5,7 +5,6 @@ metadata:
   name: session-db
   labels:
     name: session-db
-  namespace: sock-shop
 spec:
   replicas: 1
   selector:
@@ -15,6 +14,7 @@ spec:
     metadata:
       labels:
         name: session-db
+        app: sockshop
       annotations:
         prometheus.io.scrape: "false"
     spec:

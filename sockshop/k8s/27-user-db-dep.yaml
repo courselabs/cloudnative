@@ -5,7 +5,6 @@ metadata:
   name: user-db
   labels:
     name: user-db
-  namespace: sock-shop
 spec:
   replicas: 1
   selector:
@@ -15,11 +14,11 @@ spec:
     metadata:
       labels:
         name: user-db
+        app: sockshop
     spec:
       containers:
       - name: user-db
         image: weaveworksdemos/user-db:0.4.0
-
         ports:
         - name: mongo
           containerPort: 27017

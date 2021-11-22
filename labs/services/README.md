@@ -224,18 +224,6 @@ kubectl get svc -l app=whoami
 
 > If your cluster doesn't have LoadBalancer support, the `EXTERNAL-IP` field will stay at `<pending>` forever
 
-External Services **also** create a ClusterIP, so you can access them internally. 
-
-You always need to use the Service port for communication:
-
-```
-kubectl exec sleep -- curl -s http://whoami-lb:8080
-
-kubectl exec sleep -- curl -s http://whoami-np:8010
-```
-
-> The Services all have the same label selector, so they all direct traffic to the same Pod
-
 Now you can call the whoami app from your local machine:
 
 ```

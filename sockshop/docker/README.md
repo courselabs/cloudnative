@@ -4,16 +4,15 @@ Sock Shop is a microservices demo app. It runs as lots of small services which e
 
 Each part of the app is packaged and published as container images on Docker Hub, and you can model and run the whole app using Docker Compose.
 
-
 ## Reference
 
-- [Sock Shop microservices demo app homepage](https://microservices-demo.github.io) - 
+- [Sock Shop microservices demo app homepage](https://microservices-demo.github.io) 
 
-- [Sock Shop deployment repo](https://github.com/microservices-demo/microservices-demo) -
+- [Sock Shop deployment repo](https://github.com/microservices-demo/microservices-demo)
 
 - [Sock Shop organization](https://github.com/microservices-demo) - contains source code repos for each component
 
-- [Docker Compose Sock Shop documentation ](https://microservices-demo.github.io/deployment/docker-compose.html)
+- [Docker Compose Sock Shop documentation](https://microservices-demo.github.io/deployment/docker-compose.html)
 
 
 ## Run the app
@@ -28,14 +27,16 @@ There are lots of container images so it will be useful to pull them all before 
   <summary>Not sure how?</summary>
 
 ```
+# pulls all the images in the model:
 docker-compose -f ./sockshop/docker/docker-compose.yml pull
 
+# starts all containers in detached mode:
 docker-compose -f ./sockshop/docker/docker-compose.yml up -d
 ```
 
 </details><br />
 
-> When you run the project you'll see a warning about the MySQL password; you can ignore that.
+> When you run the project you'll see a warning about the MySQL password - you can ignore it.
 
 📋 Check all the containers are running, find the entrypoint to the app and browse to it. and browse to the app. 
 
@@ -43,9 +44,8 @@ docker-compose -f ./sockshop/docker/docker-compose.yml up -d
   <summary>Not sure how?</summary>
 
 ```
+# this will show container status and published ports:
 docker-compose -f ./sockshop/docker/docker-compose.yml ps
-
-docker-compose -f ./sockshop/docker/docker-compose.yml port
 ```
 
 </details><br />
@@ -115,6 +115,8 @@ docker-compose -f ./sockshop/docker/docker-compose.yml up -d --scale front-end=3
 
 docker rm -f docker_front-end_1
 ```
+
+</details>
 
 > The front end is a stateful app, it stores user sessions locally in each container.
 

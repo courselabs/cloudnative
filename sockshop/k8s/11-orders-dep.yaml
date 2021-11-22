@@ -5,7 +5,6 @@ metadata:
   name: orders
   labels:
     name: orders
-  namespace: sock-shop
 spec:
   replicas: 1
   selector:
@@ -15,6 +14,7 @@ spec:
     metadata:
       labels:
         name: orders
+        app: sockshop
     spec:
       containers:
       - name: orders
