@@ -30,7 +30,7 @@ docker compose --help
 docker compose up --help
 ```
 
-> This is new functionality and it's not 100% compatible with the original Compose CLI. For this lab you should be able to use either, but if you have any issues stick with `docker-compose`.
+> This is new functionality but it should be 100% compatible with the original Compose CLI. For this lab you can use either, but if you have any issues stick with `docker-compose`.
 
 </details><br/>
 

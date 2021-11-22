@@ -130,7 +130,7 @@ exit
 
 Linux OS containers for Docker usually have the bare-minimum toolset installed.
 
-The Ubuntu team publish a package for Ubuntu Server but it doesn't have all the usual tools installed. There's no [curl](), so you can't make HTTP calls, but the container runs as the root user so you have permissions to install anything you need:
+The Ubuntu team publish a package for Ubuntu Server but it doesn't have all the usual tools installed. There's no [curl](https://curl.se), so you can't make HTTP calls, but the container runs as the root user so you have permissions to install anything you need:
 
 ```
 docker run -it ubuntu

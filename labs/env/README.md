@@ -66,7 +66,7 @@ docker run -e COURSELABS=env -e LANG=C.UTF-16 openjdk:8-jre-alpine printenv
 
 If you're setting lots of variables, it's easier to store them all in a file like [exercises.env](./exercises.env) and pass that to the container as an environment file.
 
-📋 Run container loading `labs/env/exercises.env` as an environment file.
+📋 Run a container loading `labs/env/exercises.env` as an environment file.
 
 <details>
   <summary>Not sure how?</summary>
