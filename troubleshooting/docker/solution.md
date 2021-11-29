@@ -7,9 +7,9 @@ My solution is here:
 Copy it to the main folder so the config paths are correct, and the app will work:
 
 ```
-cp labs/troubleshooting/lab/solution.yml labs/troubleshooting/
+cp troubleshooting/docker/lab/solution.yml troubleshooting/docker/
 
-docker-compose -f labs/troubleshooting/solution.yml up -d
+docker-compose -f troubleshooting/docker/solution.yml up -d
 ```
 
 > Use the app at http://localhost:8090

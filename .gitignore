@@ -1,1 +1,4 @@
 0
+server-cert.pem
+server-key.pem
+labs/compose-model/.env

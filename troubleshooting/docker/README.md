@@ -11,7 +11,7 @@ Images can be misconfigured, the container environment could be incorrect, and c
 This one is all lab :) Try running this app - and make whatever changes you need to get the app running, so the containers run and the app works.
 
 ```
-docker-compose -f labs/troubleshooting/compose.yml up -d
+docker-compose -f troubleshooting/docker/compose.yml up -d
 ```
 
 > Your goal is to browse to http://localhost:8090 and have a working random number generator.
@@ -26,5 +26,5 @@ ___
 When you're done you can remove all the objects:
 
 ```
-docker-compose -f labs/troubleshooting/compose.yml down
+docker-compose -f troubleshooting/docker/compose.yml down
 ```
