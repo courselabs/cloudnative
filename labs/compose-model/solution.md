@@ -36,3 +36,6 @@ docker logs rng-lab_rng-api_1
 ```
 
 > Shows the info and debug level logs
+
+___
+> Back to the [exercises](README.md).

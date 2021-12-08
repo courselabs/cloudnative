@@ -64,3 +64,6 @@ Or by using the delete command with your YAML file:
 ```
 kubectl delete -f labs/pods/solution/lab.yaml
 ```
+
+___
+> Back to the [exercises](README.md).

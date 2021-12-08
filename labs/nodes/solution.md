@@ -25,3 +25,6 @@ kubectl get node <your-node> -o go-template=$'{{index .metadata.labels "kubernet
 ```
 
 (JSONPath doesn't like the forward slash in the label key)
+
+___
+> Back to the [exercises](README.md).

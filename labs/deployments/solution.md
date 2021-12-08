@@ -47,3 +47,6 @@ curl localhost:8020 # OR curl localhost:30020
 ```
 
 > You can flip between the deployments by changing the Service spec
+
+___
+> Back to the [exercises](README.md).

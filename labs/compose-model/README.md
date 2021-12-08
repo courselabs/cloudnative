@@ -196,3 +196,12 @@ Cleanup by removing all containers:
 ```
 docker rm -f $(docker ps -aq)
 ```
+
+And if you're not in the `cloudnative` folder, then navigate back up:
+
+```
+pwd
+
+# in the labs/compose-model folder? then run:
+cd ../..
+```

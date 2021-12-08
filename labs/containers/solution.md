@@ -42,3 +42,5 @@ The default image tag is much more recent, and both images are smaller:
 ```
 docker image ls openjdk
 ```
+___
+> Back to the [exercises](README.md).
